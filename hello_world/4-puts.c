@@ -1,6 +1,6 @@
 #include <stdio.h>
-int main (void) 
+/*no es necesario agregar muchas cosas ya que no tienen sentido en C*/
+int main(void)
 {
-	puts ("Programming is like building a multilingual puzzle ");
-	return (0);
+	puts("Programming is like building a multilingual puzzle ");
 }

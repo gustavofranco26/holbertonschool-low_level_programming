@@ -1,10 +1,13 @@
 #include <stdio.h>
+
 /**
- * main punto de inicio de ejecucion
+ * main - Punto de inicio
  *
- * return para devolver un valor
- */
-int main(void) {
-	puts("Programming is like building a multilingual puzzle ");
-	return (0);
+ * Return: retornar "0" (accion)
+*/
+
+int main(void)
+{
+puts("Programming is like building a multilingual puzzle\n");
+return (0);
 }

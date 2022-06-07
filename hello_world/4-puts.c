@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - Punto de inicio
+ * main - punto de inicio
  *
- * Return: retornar "0" (accion)
+ * return: retornar "0" (accion)
 */
 
 int main(void)

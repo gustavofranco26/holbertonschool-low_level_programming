@@ -9,9 +9,9 @@
 int main(void)
 {
 	int i;
-
-	for (i = 0; i <= 25; i++)
-		putchar(97 + i);
+	/*ASCII- 97=a, 122=z*/
+	for (i = 97; i <= 122; i++)
+		putchar(i);
 	putchar('\n');
 	return (i);
 }

@@ -11,6 +11,6 @@ int main(void)
 
 	for (i = 0; i <= 25; i++)
 		putchar(97 + i);
-	putchar("\n");
+	putchar('\n');
 	return (i);
 }

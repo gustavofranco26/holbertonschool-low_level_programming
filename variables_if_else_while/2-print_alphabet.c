@@ -11,5 +11,5 @@ int main(void)
 
 	for (i = 0; i <= 25; i++)
 		putchar(97 + i);
-	return (i);
+	return ("i\n");
 }

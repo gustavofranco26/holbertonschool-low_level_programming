@@ -10,8 +10,8 @@ int main(void)
 {
 	int i;
 
-	for (i = 97; i < 123; i++)
-		putchar(i);
+	for (i = 0; i <= 25; i++)
+		putchar(97 + i);
 	putchar('\n');
 	return (i);
 }

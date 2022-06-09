@@ -1,5 +1,3 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 /**
  *main - Punto de inicio
@@ -13,5 +11,5 @@ int main(void)
 	for (i = 97; i <= 122; i++)
 		putchar(i);
 	putchar('\n');
-	return (i);
+	return (0);
 }

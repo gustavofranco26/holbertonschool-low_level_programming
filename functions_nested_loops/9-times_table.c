@@ -9,10 +9,10 @@ void times_table(void)
 	int Num2;
 	int Multi;
 
-	for (Num1 = 0; Num1 < 10; Num1++)
+	for (Num1 = 0; Num1 <= 9; Num1++)
 	{
 		_putchar('0');
-		for (Num2 = 1; Num2 < 10; Num2++)
+		for (Num2 = 1; Num2 <= 9; Num2++)
 		{
 			Multi = Num1 * Num2;
 			_putchar(44);

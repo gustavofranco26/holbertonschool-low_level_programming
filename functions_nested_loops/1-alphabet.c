@@ -2,7 +2,7 @@
 /**
  * main - check the code
  *
- *Descripcion: "print _alphabet"
+ *print _alphabet - print the alphabet, folloewd by a new line
  *
  * Return: Always "0".(Accion)
  */

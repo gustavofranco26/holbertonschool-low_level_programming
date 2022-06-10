@@ -1,8 +1,6 @@
 #include "main.h"
 /**
- * main - check the code
- *
- *print _alphabet - print the alphabet, folloewd by a new line
+ * print_alphabet - print the alphabet, followed by a new line
  *
  * Return: Always "0".(Accion)
  */

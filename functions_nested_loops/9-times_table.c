@@ -17,7 +17,7 @@ void times_table(void)
 			Multi = Num1 * Num2;
 			_putchar(44);
 			_putchar(32);
-			if (Multi < 10)
+			if (Multi <= 9)
 			{
 				_putchar(32);
 				_putchar(Multi + '0');
@@ -25,7 +25,7 @@ void times_table(void)
 			else
 			{
 				_putchar((Multi / 10) + '0');
-				_putchar((Multi / 10) + '0');
+				_putchar((Multi % 10) + '0');
 
 			}
 		}

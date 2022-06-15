@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * - code
+ *_isdigit - code
  *Description: checks for adigit.
  *@c: Character
  *Return: 1 if c is a digit, 0 otherwise.

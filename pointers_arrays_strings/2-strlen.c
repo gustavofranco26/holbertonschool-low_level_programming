@@ -13,8 +13,8 @@ int _strlen(char *s)
 
 		if (*s != '\0')
 		{
-			s++;
 			longcade++;
+			s++;
 		}
 	return (longcade);
 }

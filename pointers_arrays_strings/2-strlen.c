@@ -11,7 +11,7 @@ int _strlen(char *s)
 
 	longcade = 0;
 
-	for (*s != '\0')
+	for (*s != '\0');
 	{
 		longcade++;
 		s++;

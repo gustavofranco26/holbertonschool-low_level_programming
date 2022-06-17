@@ -9,7 +9,7 @@ int _strlen(char *s)
 {
 	int longcade;
 
-	for (longcade == 0)
+	for (longcade = 0);
 
 		if (*s != '\0')
 		{

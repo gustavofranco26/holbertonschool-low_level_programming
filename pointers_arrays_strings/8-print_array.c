@@ -3,7 +3,7 @@
 
 /**
  *print_array - that prints n elements of an array of integers.
- *@a: Array 
+ *@a: Array
  *@n: Number elements
  *Return: Always (Sucess)
  */

@@ -9,9 +9,9 @@
 
 void puts2(char *str)
 {
-	int = i;
+	int i;
 
-	for (i = 0; str =! 0; i++)
+	for (i = 0; str =! '\0'; i++)
 	{
 		_putchar(str[i]);
 		s[i/2]=p[i];

@@ -9,14 +9,12 @@
 
 void puts2(char *str)
 {
-	char* p = "hello world";
-	char s[32] = "";
+	int = i;
 
-	for (int i = 0; i < strlen(p); i+=2)
+	for (i = 0; str =! 0; i++)
 	{
-		putchar(p[i]);
+		_putchar(str[i]);
 		s[i/2]=p[i];
 	}
-	printf("\n\n2nd option\n%s", s);
-	return 0;
+	_putchar('\n');
 }

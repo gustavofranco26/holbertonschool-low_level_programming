@@ -1,35 +1,29 @@
 #include "main.h"
 
 /**
- *_sqrt_recursion - a function that returns the natural square root
- *@n: Argum1
- *@bajo: Argum2
- *@medio: Argum3
- *@alto: Argum4
+ *buscaraiz - a function that find to raiz in the radical.
+ *@indi: Argumentindice
+ *@Radica: Argumentradical
  *Return: Always (Sucess)
  */
+
   
+int buscaraiz(int indi int Radica)
+{
+	if (indi * indi == Radica)
+		return (indi);
+	if (indi * indi > Radica)
+		return (-1);
+	return (buscaraiz(indi + 1, Radica));
+}
+
+/**
+ *_sqrt_recursion - a function that returns the natural square root
+ *@n: Argument
+ *Return: Always (Sucess)
+ */
+
 int _sqrt_recursion(int n)
 {
-	int bajo;
-	int alto;
-
-	if (bajo <= alto)
-	{
-		int medio= (bajo + alto) / 2;
-		
-		if ((medio * medio <= n) && ((medio + 1) * (medio + 1) > n))
-		{
-			return (medio);
-		}
-		else if (medio * medio < n)
-		{
-			return (_sqrt_recursion(medio + 1, alto, n));
-		}
-		else
-		{
-			return (_sqrt_recursion(bajo, medio - 1, n));
-		}
-	}
-	return (bajo);
+	return (buscaraiz(1, n));
 }

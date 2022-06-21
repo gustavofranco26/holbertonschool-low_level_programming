@@ -10,9 +10,9 @@
 int findnumber(int i, int x)
 {
 	if (i == x)
-		return(1);
-	else if (i & x == 0)
-		return(0);
+		return (1);
+	else if (i % x == 0)
+		return (0);
 	else
 		return (findnumber(i, x + 1));
 }
@@ -28,5 +28,5 @@ int is_prime_number(int n)
 	if (n <= 1)
 		return (0);
 	else
-		return (findnumber(n ,2));
+		return (findnumber(n, 2));
 }

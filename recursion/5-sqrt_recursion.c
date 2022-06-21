@@ -1,16 +1,35 @@
 #include "main.h"
-#include <float.h>
+
 /**
  *_sqrt_recursion - a function that returns the natural square root
- *@n: Argument
+ *@n: Argum1
+ *@bajo: Argum2
+ *@medio: Argum3
+ *@alto: Argum4
  *Return: Always (Sucess)
  */
-
+  
 int _sqrt_recursion(int n)
 {
-	float next = (prev + n / prev) / 2;
+	int bajo;
+	int alto;
 
-	if (fabs(next - prev) < FLT_EPSILON * next)
-		return (next);
-	return (_sqrt_recursion(n, next));
+	if (bajo <= alto)
+	{
+		int medio= (bajo + alto) / 2;
+		
+		if ((medio * medio <= n) && ((medio + 1) * (medio + 1) > n))
+		{
+			return (medio);
+		}
+		else if (medio * medio < n)
+		{
+			return (_sqrt_recursion(medio + 1, alto, n));
+		}
+		else
+		{
+			return (_sqrt_recursion(bajo, medio - 1, n));
+		}
+	}
+	return (bajo);
 }

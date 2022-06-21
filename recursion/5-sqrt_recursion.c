@@ -7,8 +7,7 @@
  *Return: Always (Sucess)
  */
 
-  
-int buscaraiz(int indi int Radica)
+int buscaraiz(int indi, int Radica)
 {
 	if (indi * indi == Radica)
 		return (indi);

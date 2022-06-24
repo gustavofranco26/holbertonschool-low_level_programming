@@ -10,10 +10,10 @@
 
 int main(int argc, char *argv[])
 {
-	printf("%s\n", argv[0]);
-	if (argc < 2)
-		printf("\n");
-	else
-		printf("%s\n", argv[1]);
+	int i;
+	
+	for (i = 0; i < argc; i++)
+	printf("argv[argc] = %s\n", argv[argc]);
+
 	return (0);
 }

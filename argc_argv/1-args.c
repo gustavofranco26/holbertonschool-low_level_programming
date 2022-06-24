@@ -10,10 +10,6 @@
 
 int main(int argc, char *argv[])
 {
-	//for (i = 0; i < argc; i++)
-	//{
-	//	printf("%s\n", argv[-1]);
-	//}
 	printf("%s\n", argv[0]);
 	if (argc < 2)
 		printf("\n");

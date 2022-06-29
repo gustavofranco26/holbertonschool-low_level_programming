@@ -10,42 +10,24 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	size_t str1, str2, str3, i = 0;
-	char *a;
+	char *ptr;
+	int i;
+	int ccat = 0;
+	int mmat = 0;
 
-	str1 = strlen(s1);
+	if (s1 == NULL)
+		s1 = " ";
+	if (s2 == NULL)
+		s2 = " ";
+	for (i = 0; s1[i] || s2[i]; i++)
+		mmat++;
+	ccat = malloc(sizeof(char) * mmat);
+	if (ptr = NULL)
+		return (NULL);
+	for (i = 0; s1[i]; i++)
+		ptr[ccat++] = s1[i];
+	for (i = 0; s2[i]; i++)
+		ptr[ccat++] = s2[i];
 
-	str2 = strlen(s2);
-	str3 = str1 + str2 + 1;
-	a = malloc(str3);
-
-	while (*s1 != '\0')
-	{
-		a[i] = *s1;
-		s1++;
-		i++;
-	}
-
-	while (*s2 != '\0')
-	{
-		a[i] = *s2;
-		s2++;
-		i++;
-	}
-
-	a[i] = '\0';
-
-	return (a);
-}
-
-/**
- *ccat - name function concatenation
- *Return: Always
- */
-
-int ccat(void)
-	char *stri = str_concat( );
-	printf("%s\n", stri);
-	free(stri);
-	return (0);
+	return (ptr);
 }

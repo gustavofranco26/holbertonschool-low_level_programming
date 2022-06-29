@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include "main.h"
-
+#include <string.h>
 /**
  *str_concat -  a function that concatenates two strings.
  *@s1: Argumstrpoint1

@@ -37,3 +37,15 @@ char *str_concat(char *s1, char *s2)
 
 	return (a);
 }
+
+/**
+ *ccat - name function concatenation
+ *Return: Always
+ */
+
+int ccat(void)
+	char *str = str_concat( );
+	printf("%s\n", str);
+	free(str);
+	return (0);
+}

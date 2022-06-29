@@ -44,8 +44,8 @@ char *str_concat(char *s1, char *s2)
  */
 
 int ccat(void)
-	char *str = str_concat( );
-	printf("%s\n", str);
-	free(str);
+	char *stri = str_concat( );
+	printf("%s\n", stri);
+	free(stri);
 	return (0);
 }

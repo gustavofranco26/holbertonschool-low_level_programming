@@ -1,17 +1,24 @@
+#ifndef DOGHEADER
+#define DOGHEADER
 #include <stdio.h>
 
 /**
- *main - Define a new type struct dog with the following elements
- *Return: Always.
+ * struct dog - Verify the task
+ *@name: Member1
+ *@age: Member2
+ *@owner: MEmber3
+ *Return: Always (0).
  */
 
-int main(void)
+typedef struct dog
 {
-	struct dog my_dog;
+	char *name;
+	float age;
+	char *owner;
+} dog_t;
 
-	my_dog.name = "Poppy";
-	my_dog.age = 3.5;
-	my_dog.owner = "Bob";
-	printf("My name is %s, and I am %.1f :) - Woof!\n", my_dog.name, my_dog.age);
-	return (0);
-}
+void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
+dog_t *new_dog(char *name, float age, char *owner);
+void free_dog(dog_t *d);
+#endif

@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <string.h>
 #include "main.h"
 
 /**
@@ -10,21 +9,22 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int k = 1;
-	unsigned int i = 0;
-	int c;
-	unsigned int len;
-
-	len = strlen(b);
-	for (c = len - 1; c >= 0; c--)
+	unsigned int t, p;
+	int len;
+	
+	if (b == NULL)
+		return (0);
+	for (len = 0; b[len]; len++)
 	{
-		if (b[c] != '0' && b[c] != '1')
+		if (b[len] != '0' && b[len] != '1')
 			return (0);
-		if (b[c] == '1')
-		{
-			i += k;
-		}
-		k *= 2;
 	}
-	return (i);
+	for (p = 1, t = 0, len --; len >= 0; len --, p *= 2)
+	{
+		if (b[len] == '1')
+		{
+			t += p;
+		}
+	}
+	return (t);
 }

@@ -1,7 +1,7 @@
 #include "hash_tables.h"
 /**
  *hash_table_set - A function that adds an element to the hash table.
- *@ht: Pointer to a struct hashtable 
+ *@ht: Pointer to a struct hashtable
  *@key: key to add
  *@value: Value of the key
  *Return: 1 if it succeeded, 0 otherwise.
